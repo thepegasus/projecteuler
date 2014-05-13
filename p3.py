@@ -9,12 +9,19 @@ def checkPrime(num):
             return False
     return True
             
-            
-targetnum=600851475143/2
-currentnum=2
-while currentnum<targetnum:
-    print("Checking:"+str(currentnum));
-    if(targetnum%currentnum==0):
-        if(checkPrime(currentnum)):
-            print (str(currentnum))
-    currentnum+=1
+def longdivide(num):
+    for i in range(2,num):
+        if(num%i==0):
+            if(checkPrime(num)):
+                return i;
+           
+targetnum=600851475143
+rentnum=targetnum
+print("Starting- targetnum: "+str(targetnum)+" limit: "+str(limit))
+while currentnum > limit :
+    longdivide(currentnum)
+   # print("Checking:"+str(currentnum));
+   # if(targetnum%currentnum==0): 
+        #if(checkPrime(currentnum)):
+    #        print (str(currentnum))
+    currentnum=currentnum/currentdivisor
